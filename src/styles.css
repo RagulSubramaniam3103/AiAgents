@@ -1,0 +1,143 @@
+/* Global CSS Styles & Pure Black and White Theme Variables */
+
+:root, body.dark-theme {
+  --bg-primary: #000000;
+  --bg-secondary: #0c0c0c;
+  --bg-tertiary: #171717;
+  --bg-card: #121212;
+  --bg-hover: #262626;
+  --bg-input: #0e0e0e;
+  
+  --border-color: #262626;
+  --border-hover: #404040;
+  --border-active: #ffffff;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-muted: #737373;
+  
+  --accent-primary: #ffffff;
+  --accent-secondary: #e5e5e5;
+  --accent-gradient: linear-gradient(135deg, #ffffff 0%, #d4d4d4 100%);
+  --accent-glow: rgba(255, 255, 255, 0.12);
+  
+  --message-user-bg: #262626;
+  --message-user-text: #ffffff;
+  --message-ai-bg: #0d0d0d;
+  --message-ai-text: #ffffff;
+  --message-border: #262626;
+  
+  --reasoning-box-bg: #121212;
+  --reasoning-box-border: #2e2e2e;
+  --reasoning-text: #e5e5e5;
+  --reasoning-color: #e5e5e5;
+  
+  --code-bg: #080808;
+  --code-header-bg: #141414;
+  --topbar-bg: rgba(0, 0, 0, 0.92);
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.85);
+  
+  --success: #22c55e;
+  --warning: #eab308;
+  --danger: #ef4444;
+  
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+}
+
+body.light-theme {
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-tertiary: #f4f4f5;
+  --bg-card: #ffffff;
+  --bg-hover: #e4e4e7;
+  --bg-input: #ffffff;
+  
+  --border-color: #e4e4e7;
+  --border-hover: #d4d4d8;
+  --border-active: #000000;
+  
+  --text-primary: #09090b;
+  --text-secondary: #52525b;
+  --text-muted: #a1a1aa;
+  
+  --accent-primary: #09090b;
+  --accent-secondary: #27272a;
+  --accent-gradient: linear-gradient(135deg, #18181b 0%, #000000 100%);
+  --accent-glow: rgba(0, 0, 0, 0.1);
+  
+  --message-user-bg: #18181b;
+  --message-user-text: #ffffff;
+  --message-ai-bg: #f9f9fb;
+  --message-ai-text: #09090b;
+  --message-border: #e4e4e7;
+  
+  --reasoning-box-bg: #f4f4f5;
+  --reasoning-box-border: #e4e4e7;
+  --reasoning-text: #18181b;
+  --reasoning-color: #18181b;
+  
+  --code-bg: #18181b;
+  --code-header-bg: #09090b;
+  --topbar-bg: rgba(255, 255, 255, 0.95);
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.1);
+  
+  --success: #16a34a;
+  --warning: #ca8a04;
+  --danger: #dc2626;
+  
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-hover);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
